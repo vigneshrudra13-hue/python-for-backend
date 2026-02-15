@@ -1,8 +1,22 @@
-print("hello world")
-name = input("whats your name? ")
-colour = input("whats your favourite color? ")
-print(name+" likes "+colour)
-weight=float(input("whats your weight(pds):"))
-weightk=weight*0.42
-
-print(f"{weightk} is your weight in kg" )
+command = ""
+started=False
+while command !="quit":
+    command=input("> ").lower()
+    if command == "start":
+        if started:
+            print("car has already started!")
+        else:
+            started=True
+            print("car has started")
+    elif command == "stop":
+        
+        if not started:
+            print("car is already stopped!")
+        else:
+            started=False
+            print("car has stopped")
+    elif command =="help":
+        print("enter start to start the car \nstop to stop the car\nhelp for details\nquit")
+    else :
+        print("operation exited")
+        break
