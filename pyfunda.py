@@ -1,22 +1,16 @@
-command = ""
-started=False
-while command !="quit":
-    command=input("> ").lower()
-    if command == "start":
-        if started:
-            print("car has already started!")
-        else:
-            started=True
-            print("car has started")
-    elif command == "stop":
-        
-        if not started:
-            print("car is already stopped!")
-        else:
-            started=False
-            print("car has stopped")
-    elif command =="help":
-        print("enter start to start the car \nstop to stop the car\nhelp for details\nquit")
-    else :
-        print("operation exited")
-        break
+import sys
+import random
+print("choose any one:\n 1 for rock\n 2 for paper\n3 for scissors")
+playerchoice = int(input("enter the value:"))
+compchoice = int(random.choice("123"))
+print("your choice is "+ str(playerchoice) + ", computer chose "+ str(compchoice)+".")
+if playerchoice == 1 and compchoice ==3:
+    print("🥳you win!")
+elif playerchoice == 2 and compchoice ==1:
+    print("🥳you win!")
+elif playerchoice == 3 and compchoice ==2:
+    print("🥳you win!")        
+elif playerchoice==compchoice:
+    print("tied game")    
+else:
+    print("🐍python won")
