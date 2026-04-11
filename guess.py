@@ -1,17 +1,7 @@
 import sys
 import random
 import argparse
-
-parser = argparse.ArgumentParser(
-        description="A guessing game"
-    )
-parser.add_argument(
-        "-n","--name",metavar="Name",
-        required=True,help="Name of the player"
-    )
-args = parser.parse_args()
-
-def guess(name):
+def say(name):
     playerwins = 0
     gamecount = 0
     playagain = True
@@ -34,8 +24,8 @@ def guess(name):
         again = input("Play again? (y/n): ").lower()
         if again != 'y':
             playagain = False
+            import arcade
+            arcade.arc()
     
     print(f"Thanks for playing, {name}!")
-
-guess(args.name)
     

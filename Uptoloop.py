@@ -1,20 +1,14 @@
 import sys
 import random
 
-def rps():
-    x = input("do you wanna play rock paper scissors?\ny for Yes \n n for No:")
-    if x.lower() == 'y':
-        playagain = True
-    else:
-        playagain = False
-        print('Cool!\nhave a nice day')
-        sys.exit()
+def rps(name):
     gamecount = 0
     playerwin=0
     pythonwin=0
+    playagain = True
     while playagain == True:
         gamecount += 1
-        print("choose any one:\n1 for rock\n2 for paper\n3 for scissors")
+        print(f"{name}, choose any one:\n1 for rock\n2 for paper\n3 for scissors")
         playerchoice = int(input("enter the value:"))
         compchoice = int(random.choice("123"))
         
@@ -36,15 +30,16 @@ def rps():
                 pythonwin += 1
         else:
             print("Invalid option!!")
-        y = f"you've played {gamecount} games , and won {playerwin} times,but python won {pythonwin} times"   
+        y = f"{name},you've played {gamecount} games , and won {playerwin} times,but python won {pythonwin} times"   
         print(y)
         hey = input("👁️ 👁️ If to continue playing enter:\nY for Yes\nE for Exit\n:")
         if hey.lower() == 'y':
             continue
         else:
             playagain = False   
-            for x in "ThankYou":
-                print(x)
+            print(f"thanks for playing {name}")
+            import arcade
+            arcade.arc()
 
 
 if __name__ == '__main__':
