@@ -19,7 +19,7 @@ class bankaccount:
         if self.balance >= amount:
             return
         else:
-            raise Exception(f"sorry, the acc '{self.name}' has $'{self.balance}' ")
+            raise balanceException(f"sorry, the acc '{self.name}' has $'{self.balance}' ")
     
     def withdraw(self,amount):
         try :

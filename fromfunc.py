@@ -21,5 +21,4 @@ if __name__ == '__main__':
     )
     args = parser.parse_args()
     ko(args.name,args.lang)
-    import Uptoloop
-    Uptoloop.rps()
+    
