@@ -15,13 +15,13 @@ def rps(name):
         if playerchoice <= 3 and playerchoice != 0:
             print("👉 Your choice is "+ str(playerchoice) + "\n👉 computer chose "+ str(compchoice)+".")
             if playerchoice == 1 and compchoice == 3:
-                print("🥳 you win!")
+                print("🥳 You win!")
                 playerwin +=1
             elif playerchoice == 2 and compchoice == 1:
-                print("🥳 you win!")
+                print("🥳 You win!")
                 playerwin +=1
             elif playerchoice == 3 and compchoice == 2:
-                print("🥳 you win!")
+                print("🥳 You win!")
                 playerwin +=1        
             elif playerchoice == compchoice:
                 print("😱😱 tied game")    
@@ -30,7 +30,7 @@ def rps(name):
                 pythonwin += 1
         else:
             print("Invalid option!!")
-        y = f"{name},you've played {gamecount} games , and won {playerwin} times,but python won {pythonwin} times"   
+        y = f"{name},You've played {gamecount} games , and won {playerwin} times,but python won {pythonwin} times"   
         print(y)
         hey = input("👁️ 👁️ If to continue playing enter:\nY for Yes\nE for Exit\n:")
         if hey.lower() == 'y':
@@ -42,6 +42,3 @@ def rps(name):
             arcade.arc()
 
 
-if __name__ == '__main__':
-    rps()    
-    

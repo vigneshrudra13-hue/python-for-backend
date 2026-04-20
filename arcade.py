@@ -12,7 +12,7 @@ parser.add_argument(
 )
 args = parser.parse_args()
 def arc():
-    x=input(f"{args.name} enter 1 to play rock paper scissors \n2 to play guessing game \nand x to quit:")
+    x=input(f"{args.name},enter 1 to play rock paper scissors \n2 to play guessing game \nand x to quit:")
     if x == '1':
         Uptoloop.rps(args.name)
     elif x == '2':
@@ -21,5 +21,5 @@ def arc():
         print("program exited")
         sys.exit
 
-if __name__ == '__main__':
+if __name__ == '__main__':``
     arc()
