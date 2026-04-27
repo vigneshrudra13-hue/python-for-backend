@@ -13,7 +13,7 @@ class playerstats:
         CMI = int(input("Enter the innings played: "))
         CMW = int(input("Enter the wickets you've taken if any: "))
         Avg = CMR/CMI if CMI !=0 else 0.0 
-        data = f"Date:{Date}\nRuns Scored:{CMR}\nBalls faced:{CMI}\nBatting average:{Avg:.2f}\nWickets taken:{CMW}\n\n"
+        data = f"Date:{Date}\nRuns Scored:{CMR}\nInnings played:{CMI}\nBatting average:{Avg:.2f}\nWickets taken:{CMW}\n\n"
         filename = f"{self.name}_Batsman.txt"
         Choice = input("enter if you want to over write the file or edit the file\nY for Yes (or) N for NO")
         if Choice.lower() == 'n':
