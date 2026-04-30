@@ -1,0 +1,12 @@
+Date:27/04/2026
+Runs Scored:225
+Balls faced:12
+Batting average:18.75
+Wickets taken:0
+
+Date:2/4/26
+Runs Scored:225
+Innings played:12
+Batting average:18.75
+Wickets taken:0
+
